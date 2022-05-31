@@ -1,0 +1,11 @@
+.navbar .navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-size: 1.1em;
+    padding: 35px;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #f7c7c7;
+}
+.navbar-logo-centered .navbar-nav .nav-link{
+    padding: .5em 1em;
+}
