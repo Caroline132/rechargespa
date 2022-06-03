@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Recharge Spa</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #003332;">
+        <a class="navbar-brand d-md-none px-3" href="./index.html"><img src="/assets/zen.png" width="55" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbarToggler7"
+            aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center align-items-center" id="myNavbarToggler7">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link px-5" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-5" href="./services.html">Services</a>
+                </li>
+                <a class="d-none d-md-block" href="./index.html"><img src="/assets/zen.png" width="55" alt="logo"></a>
+                <li class="nav-item">
+                    <a class="nav-link px-5" href="./team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-5" href="./book.html">Book</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container mt-2 mb-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 text-center text-md-start">
+                <div class="card">
+                    <div class="invoice p-5">
+                        <h5>Booking is Confirmed!</h5>
+                        <span id="name" class="font-weight-bold d-block mt-4">Hello, No Name</span>
+                        <script>
+                            var name = sessionStorage.getItem("name");
+                            document.getElementById('name').innerText = "Hello, "+name;
+                        </script>
+                        <span>Your booking has been confirmed. See you soon!</span>
+                        <div class="info border-top mt-3 mb-3 border-bottom table-responsive">
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="py-2">
+                                                <span class="d-block text-muted">Email Address</span>
+                                            <span id="emailEntered">no email</span>
+                                            <script>
+                                                var email = sessionStorage.getItem("email");
+                                                document.getElementById('emailEntered').innerText = email;
+                                            </script>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product border-bottom table-responsive">
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="py-2">
+                                                <span class="d-block text-muted">Booking Date & Time</span>
+                                            <span id="startDateSelected">N/A</span>
+                                            <script>
+                                                var date = sessionStorage.getItem("date");
+                                                document.getElementById('startDateSelected').innerText = date;
+                                            </script>
+                                            <span id="timeSelected">N/A</span>
+                                            <script>
+                                                var time = sessionStorage.getItem("time");
+                                                document.getElementById('timeSelected').innerText = "at "+time;
+                                            </script>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product border-bottom table-responsive">
+                            <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="py-2">
+                                            <span class="d-block text-muted">Service & Expert</span>
+                                        <span id="service">N/A</span>
+                                        <script>
+                                            var service = sessionStorage.getItem("service");
+                                            document.getElementById('service').innerText = service;
+                                        </script>
+                                        <span id="expert">N/A</span>
+                                        <script>
+                                            var expert = sessionStorage.getItem("expert");
+                                            document.getElementById('expert').innerText = "with "+expert;
+                                        </script>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody> 
+                            </table>
+                        </div>
+                        <p class="font-weight-bold mb-0 mt-3">Thank you!</p>
+                        <span>Recharge Spa Team</span>
+                    </div>
+                </div>
+                <!--   
+                <div class="text-center logo p-2 px-5">
+                    <img src="https://i.imgur.com/2zDU056.png" width="50">
+                </div>
+                --> 
+            </div>
+        </div>
+        <div class="text-center text-md-center">
+            <a href="/book.html" role="button" class="btn btn-secondary px-5">Book More</a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
