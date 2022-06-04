@@ -30,5 +30,8 @@ body {
 .page-holder {
     min-height: 100vh;
 }
-  
+
+.fa-ul {
+    list-style-type: none;
+}
 
