@@ -1,3 +1,4 @@
+// Get booking information 
 var name = sessionStorage.getItem("name");
 document.getElementById('name').innerText = "Hello, "+name;
 

@@ -1,3 +1,4 @@
+// Set booking information
 let name = document.getElementById('custName');
 name.addEventListener("change", function() {
     sessionStorage.setItem("name", name.value);
