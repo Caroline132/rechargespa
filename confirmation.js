@@ -10,7 +10,7 @@ document.getElementById('startDateSelected').innerText = date;
 var time = sessionStorage.getItem("time");
 document.getElementById('timeSelected').innerText = "at "+time;
 
-var service = sessionStorage.getItem("service");
+var service = sessionStorage.getItem("checkbox");
 document.getElementById('service').innerText = service;
 
 var expert = sessionStorage.getItem("expert");

@@ -41,11 +41,10 @@
 
         <div class="row justify-content-center my-5">
             <div class="col-lg-6">
-                <form>
-
+                <div>
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-sm-6">
-                            <label for="name" class="form-label">Name:</label>
+                            <label for="name" class="form-label">Name</label>
                             <div class="input-group mb-4">
                                 <span class="input-group-text">
                                     <i class="bi bi-person-fill"></i>
@@ -54,7 +53,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                            <label for="email" class="form-label">Email address:</label>
+                            <label for="email" class="form-label">Email address</label>
                             <div class="input-group mb-4">
                                 <span class="input-group-text">
                                     <i class="bi bi-envelope-fill"></i>
@@ -64,14 +63,23 @@
                         </div>
                     </div>
 
-                    <label for="service" class="form-label">Sevice</label>
-                    <select id="service" class="form-select mb-4">
-                        <option value="Facial">Facial</option>
-                        <option value="Manicure and/or Pedicure">Pedicure and/or Manicure</option>
-                        <option value="Hair Removal">Hair Removal</option>
-                        <option value="Massage">Massage</option>
-                        <option value="Package">Package</option>
-                    </select>
+                    <label for="service" class="form-label">Service</label>
+                    <div class="form-check">
+                        <input class="form-check-input inp" type="checkbox" id="inlineCheckbox1" value="Facial"> 
+                        <label class="form-check-label" for="inlineCheckbox1">Facial</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input inp"  type="checkbox" id="inlineCheckbox1" value="Manicure and/or Pedicure"> 
+                        <label class="form-check-label inp" for="inlineCheckbox1">Pedicure and/or Manicure</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input inp"  type="checkbox" id="inlineCheckbox1" value="Hair Removal"> 
+                        <label class="form-check-label inp" for="inlineCheckbox1">Hair Removal</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input inp"  type="checkbox" id="inlineCheckbox1" value="Massage"> 
+                        <label class="form-check-label inp" for="inlineCheckbox1">Massage</label>
+                    </div>
 
                     <label for="expert" class="form-label">Expert</label>
                     <select id="expert" class="form-select mb-4">

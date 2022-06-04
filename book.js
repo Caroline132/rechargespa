@@ -8,12 +8,6 @@ email.addEventListener("change", function() {
     sessionStorage.setItem("email", email.value);
 });
 
-let service = document.getElementById('service');
-sessionStorage.setItem("service", "Facial");
-service.addEventListener("change", function() {
-    sessionStorage.setItem("service", service.value);
-});
-
 let expert = document.getElementById('expert');
 sessionStorage.setItem("expert", "Jane");
 expert.addEventListener("change", function() {
@@ -28,4 +22,14 @@ startDate.addEventListener("change", function() {
 let bookTime = document.getElementById('bookTime');
 bookTime.addEventListener("change", function() {
     sessionStorage.setItem("time", bookTime.value);
+});
+
+var cbs = document.querySelectorAll('[type="checkbox"]');
+[].forEach.call(cbs, function (cb) {
+    cb.addEventListener("click", function(){
+        const checkboxes = document.querySelectorAll('input[type=checkbox]:checked').value;
+        const data = [...document.querySelectorAll('.inp:checked')].map(e => e.value);
+        let text = data.toString();
+        sessionStorage.setItem("checkbox", text);
+    });
 });
